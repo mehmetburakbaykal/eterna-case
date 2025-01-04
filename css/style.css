@@ -4,6 +4,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: DM Sans;
             font-size: 16px;
             font-weight: 400;
             line-height: 20.83px;
@@ -17,12 +18,30 @@
             -webkit-filter: blur(74.3px);
         }
 
-        #router-view {
-            position: relative; 
-            top:127px;
+        header {
+            height: 40px;
+            padding: 16;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
         }
 
-        .container {
+        #header-left-container {
+            color: white;
+            padding-left: 21px;
+            margin-bottom: 2px;
+        }
+
+        #header-right-icons-container {
+            padding-right: 8px;
+        }
+
+        #router-view {
+            position: relative;
+            top: 127px;
+        }
+
+        #app {
             border-radius: 10px;
             padding: 20px;
             width: 375px;
@@ -34,19 +53,21 @@
 
         .logo {
             width: 120px;
-            margin-bottom: 20px;
+            margin-bottom: 23px;
         }
 
+        /* DROPDOWN */
         .dropdown {
             display: flex;
             justify-content: center;
+            margin-top: 26px;
         }
 
         .dropdown-container {
             position: relative;
             width: 300px;
         }
-        
+
         .dropdown-button {
             width: 100%;
             padding: 10px;
@@ -72,9 +93,9 @@
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            width: 100%;
+            margin-top: 8px;
+            width: 320px;
             z-index: 10;
-            padding: 10px;
             max-height: 200px;
             overflow-y: auto;
         }
@@ -84,7 +105,6 @@
             padding: 8px;
             border: 1px solid #ced4da;
             border-radius: 5px;
-            margin-bottom: 10px;
             font-size: 14px;
         }
 
@@ -95,20 +115,47 @@
         }
 
         .dropdown-content ul li {
-            padding: 8px 10px;
+            padding: 12px;
             display: flex;
             gap: 10px;
             cursor: pointer;
         }
 
         .dropdown-content ul li input[type="checkbox"] {
-            width: 20px;
+            width: 18px;
             margin: 0;
             cursor: pointer;
         }
 
         .dropdown-content ul li:hover {
             background-color: #f1f1f1;
+        }
+
+        /* INPUT */
+        .input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 2px 12px;
+            max-width: 320px;
+        }
+
+        .input-container svg {
+            flex-shrink: 0;
+            color: #888;
+        }
+
+        .input-container input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .input-container input::placeholder {
+            color: #aaa;
         }
 
         #circle1 {
@@ -145,4 +192,39 @@
             gap: 0px;
             opacity: 1;
             border-radius: 50%;
+        }
+
+        .bottom-button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .next-button {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background: rgba(71, 115, 77, 0.85);
+            width: 108px;
+            height: 33.58px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 31.25px;
+            padding: 10px 20px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .text {
+            padding: 10px 20px;
+        }
+        
+        .chevron-button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 33.05px;
+            height: 35.72px;
+            border: 2px solid rgb(97, 135, 105);
+            border-radius: 15px;
+            margin-bottom: 15px;
         }
