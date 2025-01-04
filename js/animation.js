@@ -15,13 +15,13 @@ function animateCirclesToNextPosition() {
 
 // Function to move circles back to the previous page
 function animateCirclesToPreviousPosition() {
-    circlesPage2[0].classList.add('circle-back-to-1');
-    circlesPage2[1].classList.add('circle-back-to-2');
-    circlesPage2[2].classList.add('circle-back-to-3');
+    circlesPage2[0].classList.add('circle-back-to-4');
+    circlesPage2[1].classList.add('circle-back-to-5');
+    circlesPage2[2].classList.add('circle-back-to-6');
 
     setTimeout(() => {
         window.location.href = 'index.html';
-    }, 600);
+    }, 700);
 }
 
 // Event listener for "Next" button

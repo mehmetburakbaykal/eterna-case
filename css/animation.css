@@ -5,7 +5,6 @@
 
     100% {
         transform: translate(337px, -13px);
-        /* Circle1 -> Circle4 */
     }
 }
 
@@ -16,7 +15,6 @@
 
     100% {
         transform: translate(19px, 405px);
-        /* Circle2 -> Circle5 */
     }
 }
 
@@ -27,11 +25,9 @@
 
     100% {
         transform: translate(-46px, -429px);
-        /* Circle3 -> Circle6 */
     }
 }
 
-/* Animasyon sınıfları */
 .circle-move-1 {
     animation: moveToCircle4 0.7s ease-in-out forwards;
 }
@@ -46,44 +42,42 @@
 
 @keyframes moveBackToCircle4 {
     0% {
-        transform: translate(337px, -13px); /* Circle4 pozisyonundan başla */
+        transform: translate(0, 0); 
     }
     100% {
-        transform: translate(0, 0); /* Circle1'e geri dön */
+        transform: translate(-337px, 13px); 
     }
 }
 
 @keyframes moveBackToCircle5 {
     0% {
-        transform: translate(19px, 405px); /* Circle5 pozisyonundan başla */
+        transform: translate(0, 0); 
     }
     100% {
-        transform: translate(0, 0); /* Circle2'ye geri dön */
+        transform: translate(-19px, -405px); 
     }
 }
 
 @keyframes moveBackToCircle6 {
     0% {
-        transform: translate(-46px, -429px); /* Circle6 pozisyonundan başla */
+        transform: translate(0, 0); 
     }
     100% {
-        transform: translate(0, 0); /* Circle3'e geri dön */
+        transform: translate(46px, 429px); 
     }
 }
 
-/* Geri dönüş için yeni sınıflar */
-.circle-back-to-1 {
+.circle-back-to-4 {
     animation: moveBackToCircle4 0.7s ease-in-out forwards;
 }
 
-.circle-back-to-2 {
+.circle-back-to-5 {
     animation: moveBackToCircle5 0.7s ease-in-out forwards;
 }
 
-.circle-back-to-3 {
+.circle-back-to-6 {
     animation: moveBackToCircle6 0.7s ease-in-out forwards;
 }
-
 
 /* Background circles */
 #circle1 {
