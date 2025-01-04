@@ -22,6 +22,44 @@
             -webkit-filter: blur(50px);
         }
 
+        /* Background circles */
+        #circle1 {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(64, 123, 255, 0.4) 0%, rgba(64, 221, 255, 0.4) 100%);
+            width: 216.95px;
+            height: 216.95px;
+            position: absolute;
+            top: 107px;
+            left: -94px;
+            gap: 0px;
+            opacity: 1;
+            border-radius: 50%;
+        }
+
+        #circle2 {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(167, 233, 84, 0.4) 0%, rgba(255, 213, 64, 0.4) 100%);
+            width: 211.01px;
+            height: 211.01px;
+            position: absolute;
+            top: 281px;
+            left: 191px;
+            gap: 0px;
+            opacity: 1;
+            border-radius: 50%;
+        }
+
+        #circle3 {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(214, 255, 250, 0.4) 0%, rgba(167, 233, 84, 0.4) 100%);
+            width: 238.5px;
+            height: 238.5px;
+            position: absolute;
+            top: 630px;
+            left: -64px;
+            gap: 0px;
+            opacity: 1;
+            border-radius: 50%;
+        }
+
+        /* Footer */
         footer {
             width: 100%;
             height: 10px;
@@ -40,6 +78,7 @@
             border-radius: 10px;
         }
 
+        /* Header */
         header {
             height: 60px;
             padding: 16;
@@ -58,6 +97,7 @@
             padding-right: 8px;
         }
 
+        /* Router View */
         #router-view {
             position: relative;
             top: 67px;
@@ -79,7 +119,9 @@
             margin-bottom: 23px;
         }
 
-        /* DROPDOWN */
+
+        /* SELECT DISTRICT PAGE */
+        /* Select District Page Dropdown */
         .dropdown {
             display: flex;
             justify-content: center;
@@ -154,7 +196,7 @@
             background-color: #f1f1f1;
         }
 
-        /* INPUT */
+        /* Select District Page Input */
         .input-container {
             position: relative;
             display: flex;
@@ -181,42 +223,7 @@
             color: #aaa;
         }
 
-        #circle1 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(64, 123, 255, 0.4) 0%, rgba(64, 221, 255, 0.4) 100%);
-            width: 216.95px;
-            height: 216.95px;
-            position: absolute;
-            top: 107px;
-            left: -94px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
-        #circle2 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(167, 233, 84, 0.4) 0%, rgba(255, 213, 64, 0.4) 100%);
-            width: 211.01px;
-            height: 211.01px;
-            position: absolute;
-            top: 281px;
-            left: 191px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
-        #circle3 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(214, 255, 250, 0.4) 0%, rgba(167, 233, 84, 0.4) 100%);
-            width: 238.5px;
-            height: 238.5px;
-            position: absolute;
-            top: 630px;
-            left: -64px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
+        /* Next Button */
         .next-button {
             display: flex;
             align-items: center;
@@ -253,6 +260,7 @@
             transform: scale(0.98);
         }
 
+        /* Back Button */
         .back-button {
             position: absolute;
             bottom: 0;
@@ -271,6 +279,9 @@
             transform: scale(0.88);
         }
 
+
+        /* WORKING HOURS PAGE */
+        /* Working Hours Page Dropdown */
         .working-hours-dropdown-grid {
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr;
@@ -373,6 +384,7 @@
             justify-content: end;
         }
 
+        /* Working Hours Page Add New Button */
         .add-new-button {
             cursor: pointer;
             color: rgba(76, 208, 128, 1);
