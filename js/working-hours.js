@@ -14,12 +14,9 @@ document.addEventListener('click', (e) => {
         const item = e.target.closest('.working-hours-dropdown-menu ul li');
         const parentDropdown = item.closest('.working-hours-dropdown-container');
         const toggleButton = parentDropdown.querySelector('.working-hours-dropdown-toggle');
-        const menuItems = parentDropdown.querySelectorAll('ul li');
 
-        menuItems.forEach(menuItem => menuItem.classList.remove('selected'));
-        item.classList.add('selected');
-
-        toggleButton.textContent = item.textContent;
+        const textSpan = toggleButton.querySelector('span:nth-child(2)');
+        textSpan.textContent = item.textContent;
 
         parentDropdown.querySelector('.working-hours-dropdown-menu').classList.remove('active');
     }
@@ -41,7 +38,6 @@ document.addEventListener('input', (e) => {
     }
 });
 
-
 document.querySelector('.add-new-button').addEventListener('click', () => {
     const dropdownGrid = document.querySelector('.dropdown-grid-container');
 
@@ -51,8 +47,25 @@ document.querySelector('.add-new-button').addEventListener('click', () => {
 
     newRow.innerHTML = `
     <div class="working-hours-dropdown-container">
-                        <button class="working-hours-dropdown-toggle">
-                            Gün
+                        <button class="working-hours-dropdown-toggle" style="padding: 13.5px 10px">
+                            <span style="display: flex; align-items: center;">
+                                <span class="trash-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        style="color: rgba(255, 149, 0, 1);" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M4 7l16 0" />
+                                        <path d="M10 11l0 6" />
+                                        <path d="M14 11l0 6" />
+                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    Gün
+                                </span>
+                            </span>
                             <span>&#9662;</span>
                         </button>
                         <div class="working-hours-dropdown-menu">
