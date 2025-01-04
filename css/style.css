@@ -62,9 +62,9 @@
 
         #app {
             border-radius: 10px;
-            padding: 20px;
+            padding: 0 20px;
             width: 375px;
-            height: 812px;
+            height: 100%;
             text-align: center;
             position: relative;
             overflow: hidden;
