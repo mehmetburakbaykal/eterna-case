@@ -128,10 +128,3 @@ document.querySelector('.add-new-button').addEventListener('click', () => {
         newRow.remove();
     });
 });
-
-// Handle back button navigation
-const button = document.getElementById('back-to-index-page-button');
-
-button.addEventListener('click', () => {
-    window.location.href = 'index.html'; // Redirect to index.html
-});

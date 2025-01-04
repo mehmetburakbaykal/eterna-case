@@ -1,0 +1,159 @@
+@keyframes moveToCircle4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(337px, -13px);
+        /* Circle1 -> Circle4 */
+    }
+}
+
+@keyframes moveToCircle5 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(19px, 405px);
+        /* Circle2 -> Circle5 */
+    }
+}
+
+@keyframes moveToCircle6 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-46px, -429px);
+        /* Circle3 -> Circle6 */
+    }
+}
+
+/* Animasyon sınıfları */
+.circle-move-1 {
+    animation: moveToCircle4 0.7s ease-in-out forwards;
+}
+
+.circle-move-2 {
+    animation: moveToCircle5 0.7s ease-in-out forwards;
+}
+
+.circle-move-3 {
+    animation: moveToCircle6 0.7s ease-in-out forwards;
+}
+
+@keyframes moveBackToCircle4 {
+    0% {
+        transform: translate(337px, -13px); /* Circle4 pozisyonundan başla */
+    }
+    100% {
+        transform: translate(0, 0); /* Circle1'e geri dön */
+    }
+}
+
+@keyframes moveBackToCircle5 {
+    0% {
+        transform: translate(19px, 405px); /* Circle5 pozisyonundan başla */
+    }
+    100% {
+        transform: translate(0, 0); /* Circle2'ye geri dön */
+    }
+}
+
+@keyframes moveBackToCircle6 {
+    0% {
+        transform: translate(-46px, -429px); /* Circle6 pozisyonundan başla */
+    }
+    100% {
+        transform: translate(0, 0); /* Circle3'e geri dön */
+    }
+}
+
+/* Geri dönüş için yeni sınıflar */
+.circle-back-to-1 {
+    animation: moveBackToCircle4 0.7s ease-in-out forwards;
+}
+
+.circle-back-to-2 {
+    animation: moveBackToCircle5 0.7s ease-in-out forwards;
+}
+
+.circle-back-to-3 {
+    animation: moveBackToCircle6 0.7s ease-in-out forwards;
+}
+
+
+/* Background circles */
+#circle1 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(64, 123, 255, 0.4) 0%, rgba(64, 221, 255, 0.4) 100%);
+    width: 216.95px;
+    height: 216.95px;
+    position: absolute;
+    top: 107px;
+    left: -94px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#circle2 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(167, 233, 84, 0.4) 0%, rgba(255, 213, 64, 0.4) 100%);
+    width: 211.01px;
+    height: 211.01px;
+    position: absolute;
+    top: 281px;
+    left: 191px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#circle3 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(214, 255, 250, 0.4) 0%, rgba(167, 233, 84, 0.4) 100%);
+    width: 238.5px;
+    height: 238.5px;
+    position: absolute;
+    top: 630px;
+    left: -64px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#circle4 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(64, 123, 255, 0.4) 0%, rgba(64, 221, 255, 0.4) 100%);
+    width: 216.95px;
+    height: 216.95px;
+    position: absolute;
+    top: 94px;
+    left: 243px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#circle5 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(167, 233, 84, 0.4) 0%, rgba(255, 213, 64, 0.4) 100%);
+    width: 211.01px;
+    height: 211.01px;
+    position: absolute;
+    top: 686px;
+    left: 210px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#circle6 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(214, 255, 250, 0.4) 0%, rgba(167, 233, 84, 0.4) 100%);
+    width: 238.5px;
+    height: 238.5px;
+    position: absolute;
+    top: 201px;
+    left: -110px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+}

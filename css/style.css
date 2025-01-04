@@ -22,47 +22,10 @@
             -webkit-filter: blur(50px);
         }
 
-        /* Background circles */
-        #circle1 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(64, 123, 255, 0.4) 0%, rgba(64, 221, 255, 0.4) 100%);
-            width: 216.95px;
-            height: 216.95px;
-            position: absolute;
-            top: 107px;
-            left: -94px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
-        #circle2 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(167, 233, 84, 0.4) 0%, rgba(255, 213, 64, 0.4) 100%);
-            width: 211.01px;
-            height: 211.01px;
-            position: absolute;
-            top: 281px;
-            left: 191px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
-        #circle3 {
-            background: radial-gradient(50% 50% at 50% 50%, rgba(214, 255, 250, 0.4) 0%, rgba(167, 233, 84, 0.4) 100%);
-            width: 238.5px;
-            height: 238.5px;
-            position: absolute;
-            top: 630px;
-            left: -64px;
-            gap: 0px;
-            opacity: 1;
-            border-radius: 50%;
-        }
-
         /* Footer */
         footer {
             width: 100%;
-            height: 10px;
+            height: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,7 +43,7 @@
 
         /* Header */
         header {
-            height: 60px;
+            height: 30px;
             padding: 16;
             display: flex;
             justify-content: space-between;
@@ -107,7 +70,7 @@
         #app {
             border-radius: 10px;
             padding: 0 20px;
-            width:355px;
+            width: 355px;
             height: 100%;
             text-align: center;
             position: relative;
