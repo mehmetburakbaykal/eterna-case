@@ -25,3 +25,10 @@ document.addEventListener('click', (e) => {
         dropdownContent.style.display = 'none';
     }
 });
+
+// Select next button
+const button = document.getElementById('navigate-working-hours-page-button');
+
+button.addEventListener('click', () => {
+    window.location.href = 'working-hours.html';
+});

@@ -17,9 +17,27 @@
             filter: blur(74.3px);
             -webkit-filter: blur(74.3px);
         }
+        
+        footer {
+            width: 100%;
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-line {
+            width: 134px;
+            height: 4px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
 
         header {
-            height: 40px;
+            height: 60px;
             padding: 16;
             display: flex;
             justify-content: space-between;
@@ -39,7 +57,7 @@
         #router-view {
             position: relative;
             top: 67px;
-            height: 600px;
+            height: 75%;
         }
 
         #app {
@@ -195,7 +213,7 @@
             border-radius: 50%;
         }
 
-        .custom-button {
+        .next-button-1 {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -209,11 +227,13 @@
             line-height: 31.25px;
             cursor: pointer;
             transition: all 0.3s ease;
-            position: relative;
+            position: absolute;
+            bottom: 0;
+            right: 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .custom-button .icon {
+        .next-button-1 .icon {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -225,6 +245,24 @@
             transition: background-color 0.3s ease, border-color 0.3s ease;
         }
 
-        .custom-button:active {
+        .next-button-1:active {
             transform: scale(0.98);
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: none;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:active {
+            transform: scale(0.88);
         }
