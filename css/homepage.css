@@ -306,3 +306,109 @@ footer {
     align-items: center;
     font-size: 10px;
 }
+
+.status-summary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    width: 351px;
+    margin-top: 10px;
+}
+
+.status-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pause-button {
+    background: rgba(255, 240, 204, 1);
+    color: rgba(255, 149, 0, 1);
+    font-size: 12px;
+    line-height: 19px;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    width: 110px;
+}
+
+.pause-icon {
+    font-size: 18px;
+}
+
+.total-earnings {
+    display: flex;
+    align-items: center;
+    background: rgba(220, 255, 239, 1);
+    border-radius: 3px;
+    gap: 24px;
+    width: fit-content;
+    width: 229px;
+    height: 33px;
+    padding: 0 8px;
+    margin-left: 12px;
+}
+
+.total-earnings span {
+    font-size: 12px;
+    color: rgba(17, 93, 56, 1);
+}
+
+.earnings-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.earnings-details svg {
+    color: rgba(76, 208, 129, 1);
+}
+
+.earnings-details strong {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(17, 93, 56, 1);
+}
+
+.testimonial-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(220, 255, 239, 1);
+    border-radius: 8px;
+    padding: 3px 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.testimonial-section span {
+    font-size: 12px;
+    color: rgb(76, 208, 129);
+}
+
+.testimonial-images {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.testimonial-images img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrow-icon {
+    color: rgb(76, 208, 129);
+    font-size: 12px;
+    font-weight: bold;
+}
