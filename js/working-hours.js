@@ -130,3 +130,9 @@ document.querySelector('.add-new-button').addEventListener('click', () => {
         newRow.remove();
     });
 });
+
+const homepageBtn = document.getElementById('navigate-homepage-button');
+
+homepageBtn.addEventListener('click', (e) => {
+    window.location.href = 'homepage.html';
+});
