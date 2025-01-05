@@ -30,7 +30,7 @@ header {
 }
 
 #header-nav img {
-    width:40px;
+    width: 40px;
     height: 40px;
 }
 
@@ -133,6 +133,7 @@ header {
     height: 48.4px;
     font-weight: 400;
     position: relative;
+    cursor: pointer;
 }
 
 .action-button-item:not(:last-child)::after {
@@ -170,4 +171,102 @@ footer {
 #main-content {
     height: 577px;
     background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#reference-incomes {
+    background: rgba(16, 93, 56, 1);
+    margin: 60px 0 0 0;
+    width: 327px;
+    height: 124px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white;
+    font-weight: 400px;
+}
+
+.reference-incomes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+}
+
+/* Dropdown Container */
+.calendar-dropdown-container {
+    display: inline-block;
+    position: relative;
+}
+
+.calendar-dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 3px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: 8px;
+    font-weight: 400;
+    color: rgba(151, 151, 151, 1);
+    cursor: pointer;
+    gap: 8px;
+    width: 60px;
+    height: 24px;
+}
+
+.calendar-dropdown-button svg {
+    color: rgba(151, 151, 151, 1);
+}
+
+.calendar-dropdown-arrow {
+    color: rgba(151, 151, 151, 1);
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.income {
+    display: flex;
+    align-items: start;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.reference {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19.6px;
+    padding: 6px 2px;
+    text-align: left;
+}
+
+.reference span {
+    display: flex;
+    align-items: start;
+    font-size: 12px;
+}
+
+.reference button {
+    font-family: DM Sans;
+    width: 128px;
+    height: 33px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    color: rgb(76, 208, 129);
+    border: 1px solid rgb(76, 208, 129);
+    border-radius: 5px;
+    padding: 3px;
 }
