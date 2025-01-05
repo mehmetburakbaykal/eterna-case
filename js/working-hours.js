@@ -21,8 +21,10 @@ document.addEventListener('click', (e) => {
 
         // Update the button text with selected item
         const textSpan = toggleButton.querySelector('span:nth-child(2)');
-        textSpan.textContent = item.textContent;
-
+        if (textSpan)
+            textSpan.textContent = item.textContent;
+        else
+            toggleButton.innerHTML = `${item.textContent} <span>&#9662;</span>`
         // Close the dropdown menu
         parentDropdown.querySelector('.working-hours-dropdown-menu').classList.remove('active');
     }
